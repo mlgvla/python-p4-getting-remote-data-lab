@@ -12,10 +12,12 @@ class GetRequester:
         return response.content
 
     def load_json(self):
-        people_list = []
+        # people_list = []
         
-        people = json.loads(self.get_response_body())
-        for person in people:
-            people_list.append(person)
+        # people = json.loads(self.get_response_body())
+        # for person in people:
+        #     people_list.append(person)
     
-        return people_list
+        # return people_list
+        
+        return json.loads(self.get_response_body())
